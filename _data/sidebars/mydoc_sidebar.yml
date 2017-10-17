@@ -23,24 +23,24 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Get started
+    - title: 项目主页
       url: /index.html
       output: web, pdf
       type: homepage
 
-    - title: Introduction
+    - title: 工具安全
       url: /mydoc_introduction.html
       output: web, pdf
 
-    - title: Supported features
+    - title: Web安全
       url: /mydoc_supported_features.html
       output: web, pdf
 
-    - title: About the theme author
+    - title: 无线安全
       url: /mydoc_about.html
       output: web, pdf
 
-    - title: Support
+    - title: 系统安全
       url: /mydoc_support.html
       output: web, pdf
 
@@ -48,27 +48,30 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 6.0 Release notes
+    - title: 靶场架构
       url: /mydoc_release_notes_60.html
       output: web, pdf
 
-    - title: 5.0 Release notes
+    - title: SQL注入编写
       url: /mydoc_release_notes_50.html
+      output: web, pdf
+    - title: XSS跨站编写
+      url: /mydoc_release_notes_70.html
       output: web, pdf
 
   - title: 工具篇
     output: web, pdf
     folderitems:
 
-    - title: About Ruby, Gems, Bundler, etc.
+    - title: 爬虫系统
       url: /mydoc_about_ruby_gems_etc.html
       output: web, pdf
 
-    - title: Install Jekyll on Mac
+    - title: 爬虫之SQL注入插件编写
       url: /mydoc_install_jekyll_on_mac.html
       output: web, pdf
 
-    - title: Install Jekyll on Windows
+    - title: POC检测插件
       url: /mydoc_install_jekyll_on_windows.html
       output: web, pdf
 
@@ -76,35 +79,35 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Pages
+    - title: 预热篇
       url: /mydoc_pages.html
       output: web, pdf
 
-    - title: Posts
+    - title: 信息收集
       url: /mydoc_posts.html
       output: web, pdf
 
-    - title: Lists
+    - title: 漏洞扫描
       url: /mydoc_lists.html
       output: web, pdf
 
-    - title: Conditional logic
+    - title: 高级利用
       url: /mydoc_conditional_logic.html
       output: web, pdf
 
-    - title: Content reuse
+    - title: 实战篇
       url: /mydoc_content_reuse.html
       output: web, pdf
 
-    - title: Collections
+    - title: TEST v8实战系列
       url: /mydoc_collections.html
       output: web, pdf
 
-    - title: WebStorm editor tips
+    - title: 自己搭建实战一
       url: /mydoc_webstorm_text_editor.html
       output: web, pdf
 
-    - title: Atom editor tips
+    - title: 自动化工具检测靶场一
       url: /mydoc_atom_text_editor.html
       output: web, pdf
 
@@ -112,19 +115,19 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Sidebar navigation
+    - title: 综合攻防环境搭建
       url: /mydoc_sidebar_navigation.html
       output: web, pdf
 
-    - title: YAML tutorial in the context of Jekyll
+    - title: 日志扫描分析平台搭建
       url: /mydoc_yaml_tutorial.html
       output: web, pdf
 
-    - title: Tags
+    - title: Docker搭建实战平台
       url: /mydoc_tags.html
       output: web, pdf
 
-    - title: Series
+    - title: Web主机应用
       url: /mydoc_series.html
       output: web, pdf
 
@@ -132,47 +135,47 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Tooltips
+    - title: 渗透测试报告
       url: /mydoc_adding_tooltips.html
       output: web, pdf
 
-    - title: Alerts
+    - title: 代码审计报告
       url: /mydoc_alerts.html
       output: web, pdf
 
-    - title: Icons
+    - title: 内网综合报告
       url: /mydoc_icons.html
       output: web, pdf
 
-    - title: Images
+    - title: 风险评估报告
       url: /mydoc_images.html
       output: web, pdf
 
-    - title: Code samples
+    - title: 课程实战搭建报告
       url: /mydoc_code_samples.html
       output: web, pdf
 
-    - title: Labels
+    - title: 综合报告
       url: /mydoc_labels.html
       output: web, pdf
 
-    - title: Links
+    - title: 等待更新
       url: /mydoc_hyperlinks.html
       output: web, pdf
 
-    - title: Navtabs
+    - title: 等待更新
       url: /mydoc_navtabs.html
       output: web, pdf
 
-    - title: Tables
+    - title: 等待更新
       url: /mydoc_tables.html
       output: web, pdf
 
-    - title: Syntax highlighting
+    - title: 等待更新
       url: /mydoc_syntax_highlighting.html
       output: web, pdf
 
-    - title: Workflow maps
+    - title: 等待更新
       url: /mydoc_workflow_maps.html
       output: web, pdf
 
@@ -180,7 +183,7 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Commenting on files
+    - title: 综合攻防环境演示
       url: /mydoc_commenting_on_files.html
       output: web, pdf
 
