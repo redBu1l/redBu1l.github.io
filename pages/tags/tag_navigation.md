@@ -1,6 +1,6 @@
 ---
 title: "Navigation pages"
-tagName: navigation
+tagName: 基础篇
 search: exclude
 permalink: tag_navigation.html
 sidebar: mydoc_sidebar

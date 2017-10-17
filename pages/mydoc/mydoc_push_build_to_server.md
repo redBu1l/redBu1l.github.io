@@ -1,5 +1,5 @@
 ---
-title: Pushing builds to server
+title: 工具基础篇
 tags: [publishing]
 keywords: AWS, Amazon, command line, pushing build
 last_updated: July 3, 2016
@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 
-## Pushing to AWS S3
+## Nessus工具使用
 
 If you have the AWS Command Line Interface installed and are pushing your builds to AWS, the following commands show how you can build and push to an AWS location from the command line:
 
