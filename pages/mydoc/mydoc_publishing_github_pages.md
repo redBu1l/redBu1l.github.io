@@ -1,12 +1,12 @@
 ---
-title: Publishing on Github Pages
+title: 打造自己漏洞平台-靶场篇
 sidebar: mydoc_sidebar
 permalink: mydoc_publishing_github_pages.html
-summary: "You can publish your project on Github Pages, which is a free web hosting service provided by Github. All you need is to put your content into a Github repo branch called gh-pages and make this your default branch in your repo. With a Jekyll site, you just commit your entire project into the gh-pages branch and Github Pages will build the site for you."
+PHP靶场简述: "You can publish your project on Github Pages, which is a free web hosting service provided by Github. All you need is to put your content into a Github repo branch called gh-pages and make this your default branch in your repo. With a Jekyll site, you just commit your entire project into the gh-pages branch and Github Pages will build the site for you."
 folder: mydoc
 ---
 
-## Set up your Github repo
+## PHP漏洞靶场搭建
 
 1. Make sure you have Git installed. You can download and install [Git for Windows here](https://git-scm.com/download/win) and [Git for Mac here](https://git-scm.com/download/mac). If you're on a Mac, chances are you might already have git installed. You can check by opening up a terminal and typing `which git`.{{end}}
 1. Go to [Github.com](http://github.com) and sign up for an account.
