@@ -7,6 +7,7 @@ permalink: index.html
 Team: 团队招人中
 ---
 
+
 ## 红日安全
 
 
@@ -21,6 +22,7 @@ Team: 团队招人中
 解，由于讲师都是一线“奋进者”，所以每一期公开课要根据讲师时间来定。另外公开课主要以线下为主，大家可以下载到本地进行观看。
 小编
 先给大家公开一张思维导图
+[思维导图原图地址](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E6%BC%8F%E6%B4%9E%E5%B7%A5%E5%85%B7%E5%92%8C%E9%9D%B6%E5%9C%BA%E5%B9%B3%E5%8F%B0.png)
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%202_meitu_2.jpg)
 
