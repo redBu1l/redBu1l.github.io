@@ -130,9 +130,10 @@ Docker搭建Web漏洞部分也有公开案例，大家可以参考。
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2021_meitu_22.jpg)
 
 ### 微信交流群
-红日-启程
+红日-启程2班
+由于1班人数现在已满，我们开启2班交流群。
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E7%BA%A2%E6%97%A5-%E5%90%AF%E7%A8%8B2%E7%8F%AD.jpeg)
 
 
-{% include links.html %}
+
