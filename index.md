@@ -1,7 +1,7 @@
 ---
 title: 红日安全实验室
 keywords: sample homepage
-tags: [Sec-redclub, Pentest, Code audit, Network security]
+tags: [codeAudit, pentest, securityPappers]
 sidebar: mydoc_sidebar
 permalink: index.html
 Team: 团队招人中
@@ -11,7 +11,7 @@ Team: 团队招人中
 
 
 随着安全业的发展，业内也有很少的公开课红日安全经过十分慎重的决定为大家讲一场基础系列的公开课，
-```对于红日```，很多人可能都不熟悉，但是希望通过这次的公开课可以给大家带来收获。通过近期业内小伙伴提供的需求，本次业余
+```对于红日安全```，很多人可能都不熟悉，但是希望通过这次的公开课可以给大家带来收获。通过近期业内小伙伴提供的需求，本次业余
 安全公开课代号`启程`。寓意在这里做一个 新的起点。
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%201_meitu_1.jpg)
 
@@ -55,7 +55,7 @@ Team: 团队招人中
 开讲前先给大家简单透露总结一下.
 ### 环境搭建
 以前讲解渗透测试部分，都是利用虚拟机来搭建渗透测试平台，如果换机器，则环境需要重新搭建，程序大而且也不方便，此次培训平台采用docker方式搭建，让大家学会`简单学习`。快速摆脱环境困难问题。
-> 思路：渗透测试主要讲解Web漏洞部分和主机漏洞部分。
+思路：渗透测试主要讲解Web漏洞部分和主机漏洞部分。
 Docker搭建Web漏洞部分也有公开案例，大家可以参考。
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%204_meitu_5.jpg)
 
@@ -76,14 +76,14 @@ Docker搭建Web漏洞部分也有公开案例，大家可以参考。
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2010_meitu_11.jpg)
 
 讲解完相应内容，会进行搭建docker环境。网上公开渗透测试环境，我们也尝试用docker进行搭建，方便搭建学习。另外也会从网上找一些公开漏洞给大家尝试搭建docker环境。
-> 有以下几点
+有以下几点
 - 摆脱环境困难搭建问题
 - 平时只是看，而不去实操
 - 两条命令，环境从现
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2011_meitu_12.jpg)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2012_meitu_13.jpg)
 
-> 环境搭建包含但不限于以下环境
+环境搭建包含但不限于以下环境
 - WAF、日志安全
 - 前端安全
 - 代码审计
@@ -94,7 +94,7 @@ Docker搭建Web漏洞部分也有公开案例，大家可以参考。
 尝试用docker搭建一个系列。另外大家期待的CTF小靶场后期也在编写当中，
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2013_meitu_14.jpg)
 ### 运维方向
-> 搭建蜜罐、Snort工具使用、日志分析
+搭建蜜罐、Snort工具使用、日志分析
 密码和snort可用来充当企业IPS/IDS操作。日志操作主要利用Windows搭建一套cms系统，然后利用hacker方式攻击服务器和操作服务器，把日志提取出来，以这种类型给大家分析，还有其它类型，小编暂不多透露。
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2014_meitu_15.jpg)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2015_meitu_16.jpg)
