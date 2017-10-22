@@ -1,7 +1,7 @@
 ---
 title: 红日安全实验室
 keywords: sample homepage
-tags: [getting_started]
+tags: [红日安全, 渗透测试, 靶场, 代码审计, 内网安全]
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: 团队招人中
