@@ -16,16 +16,32 @@ summary: 团队招人中
 本次培训为红日安全团队制作一个攻防系列课程，本意是希望没有任何基础“小白”也可以启程。每一个公开课都有一个故事，希望可以给听这个故事的带来收获与成长。
 此次公开课干货较多，会分为几个不同方向进行讲解，由于讲师都是一线“奋进者”，所以每一期公开课要根据讲师时间来定。另外公开课主要以线下为主，大家可以下载到本地进行观看。
 小编先给大家公开一张思维导图
+
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%202_meitu_2.jpg)
 
 感觉是不是很酷，思维导图目前只是初级制定，分为几个方向，小编提前给大家透露一点点内容吧
 - 基础篇
+  + Web安全基础
+  + 教你如何掌握最基本渗透套路
 - 靶场篇
+  + PHP代码审计基础
+  + CTF小游戏
+  + 教你如何编写一套属于自己的靶场
 - 工具篇
+  + 自动化漏洞扫描器编写
+  + XSS自动验证截图
+  + 弱口令自动验证截图
+  + 教你如何编写自己漏洞扫描器进行渗透测试
 - 进阶篇
+  + 综合环境搭建、漏洞扫描
+  + 掌握了以上知识，那么恭喜你，成为一名中级“小白”
 - 运维片
+  + 搭建Snort、安全运维环境
 - 报告篇
+  + 教你如何写一篇安全风险报告
 - 高级篇
+  + 综合实战
+  + 教你从前端+审计+后端+内网整体性有一个安全概念
 
 具体讲解还要根据每一块内容来定，基础篇Orian讲师根据工具安全基础篇信息泄漏又做了一个小的思维导图
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%203_meitu_3.jpg)
@@ -41,14 +57,16 @@ Docker搭建Web漏洞部分也有公开案例，大家可以参考。
 后续搭建部分教大家学习dockfile编写。
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%205_meitu_6.jpg)
 
-Web其它漏洞
+### Web其它漏洞
+
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%206_meitu_7.jpg)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%207_meitu_8.jpg)
 
-这些会根据都是网上公开docker环境，有这些前辈贡献，我们才可以更简单去学习。我们讲解到某一块内容以后，我们都要根据公开漏洞进行讲解，最重要是根据docker的简单性和移植性，搭建我们自己的渗透测试环境。除了Web漏洞环境，安全工具也比较重要，所以平时有比较难安装，且依赖环境重要的工具，我们可以采取docker进行安装，比如“巡风”、cobra等业界不错工具。可以利用docker快速安装，进行快速漏洞挖掘和使用。
+这些会根据都是网上公开docker环境，有这些前辈贡献，我们才可以更简单去学习。我们讲解到某一块内容以后，我们都要根据公开漏洞进行讲解，最重要是根据docker的简单性和移植性，搭建我们自己的渗透测试环境。除了Web漏洞环境，安全工具也比较重要，所以平时有比较难安装，且依赖环境重要的工具，我们可以采取docker进行安装，比如`巡风`、`cobra`等业界不错工具。可以利用docker快速安装，进行快速漏洞挖掘和使用。
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%208_meitu_9.jpg)
 
-cobra
+### cobra
+
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%209_meitu_10.jpg)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2010_meitu_11.jpg)
 
@@ -86,6 +104,7 @@ cobra
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2019_meitu_20.jpg)
 
 其它学习路径，我们也有自己的博客和论坛，方便大家提问和讨论。
+
 [http://sec-redclub.com/](http://sec-redclub.com/)
 [http://bbs.sec-redclub.com/hr/forum.php](http://bbs.sec-redclub.com/hr/forum.php)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2020_meitu_21.jpg)
@@ -95,7 +114,9 @@ cobra
 - "老司机"为小白解答视频问题
 - 多人组团进行学习，解决各类”疑难病症“
 - 拜师学艺
-老师也都不容易，也算给各位老师一点资助，让他们有动力创造出更好的视频和文章。星球二维码
+老师也都不容易，也算给各位老师一点资助，让他们有动力创造出更好的视频和文章。
+### 星球二维码
+
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%2021_meitu_22.jpg)
 
 微信交流群
