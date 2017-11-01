@@ -31,7 +31,7 @@ entries:
     - title: 工具安全
       url: /mydoc_introduction.html
       output: web, pdf
-      subfolderitems:
+      folderitems:
 
       - title: 信息收集
         url: /tag_formatting.html
