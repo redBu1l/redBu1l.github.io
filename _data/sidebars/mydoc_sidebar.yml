@@ -27,7 +27,7 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-
+    subfolders:
     - title: 工具安全
       url: /mydoc_introduction.html
       output: web, pdf
