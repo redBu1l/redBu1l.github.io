@@ -28,7 +28,6 @@ entries:
       output: web, pdf
       type: homepage
 
-    
     - title: 工具安全
       url: /mydoc_introduction.html
       output: web, pdf
