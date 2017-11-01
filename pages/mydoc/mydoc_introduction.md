@@ -379,8 +379,3 @@ folder: mydoc
 
 
 
-
-
-
-
-{% include links.html %}
