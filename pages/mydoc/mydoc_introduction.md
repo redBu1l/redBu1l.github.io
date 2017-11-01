@@ -5,7 +5,7 @@ permalink: mydoc_introduction.html
 folder: mydoc
 ---
 为了更好服务大家在课程中遇到问题，每期我们都会进行一些问题交流和解答。`启程2班人额现在已满，请加启程3班-工具系列`。如果在看视频过程中，遇到相关问题，可以在论坛进行提问，相关贴主会对问题进行解答。或者直接加群进行讨论。由于群里只允许讨论和技术相关话题，或者转发技术贴，闲聊一律会被请出去。
-红日论坛 
+`红日论坛 `
 [http://bbs.sec-redclub.com/hr/forum.php?mod=viewthread&tid=32&extra=page%3D1](http://bbs.sec-redclub.com/hr/forum.php?mod=viewthread&tid=32&extra=page%3D1)
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%BA%8C%E8%8A%82/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87.png)
