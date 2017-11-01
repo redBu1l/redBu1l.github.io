@@ -116,7 +116,7 @@ folder: mydoc
 
 <h5>/WEB-INF/database.properties：数据库配置文件</h5>
 
-#### 原因：
+> 原因：
 
 <h5>通常一些web应用我们会使用多个web服务器搭配使用，解决其中的一个web服务器的性能缺陷以及做均衡负载的优点和完成一些分层结构的安全策略等。在使用这种架构的时候，由于对静态资源的目录或文件的映射配置不当，可能会引发一些的安全问题，导致web.xml等文件能够被读取</h5>
 
@@ -172,7 +172,7 @@ folder: mydoc
 
 * s: 聚焦搜索框
 
-#### 搜索技巧
+> 搜索技巧
 
 <h5>在设备和网站结果间切换</h5>
 
@@ -190,22 +190,22 @@ folder: mydoc
 
 <h5>我们今天主要讲下如何使用他的语法规则去高级搜索，搜索有用信息。</h5>
 
-#### 主机设备搜索
-#### 组件名称
+主机设备搜索
+组件名称
 * app: 组件名
 * ver: 组件版本
 
-#### 例1：
+例1：
 
 <h5>搜索使用iis6.0主机： app:"Microsoft-IIS" ver"6.0"，可以看到0.6秒搜索到41，781,210左右的使用iis6.0的主机。</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/25.png) 
-#### 例2：
+例2：
 
 <h5>搜索使weblogic主机： app:"weblogic httpd" port:7001，可以看到0.078秒搜索到42万左右的使用weblogic的主机。</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/26.png) 
-#### 端口
+端口
 <h5>port: 开放端口</h5>
 
 <h5>搜索远程桌面连接：port:3389</h5>
@@ -214,7 +214,7 @@ folder: mydoc
 
 * port:22
 
-#### 例1：
+例1：
 <h5>查询开放3389端口的主机：port:3389</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/27.png)
@@ -222,81 +222,81 @@ folder: mydoc
 <h5>同理查询22端口开放主机：port:22</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/28.png) 
-### 操作系统
+操作系统
 
-#### os: 操作系统。 
-#### 例:os:linux，查询操作系统为Linux系统的服务器
+os: 操作系统。 
+例:os:linux，查询操作系统为Linux系统的服务器
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/29.png) 
 
 <h5>同样，可以查看与Linux相关的漏洞</h5>
 
-#### 服务
+服务
 <h5>service: 结果分析中的“服务名”字段。</h5>
 
 <h5>完整的“服务名”列表，请参阅 https://svn.nmap.org/nmap/nmap-services</h5>
 
-#### 例1：
+例1：
 <h5>公网摄像头： service:”routersetup”</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/30.png) 
-#### 位置
+位置
 * country: 国家或者地区代码。
 * city: 城市名称。
 
 <h5>完整的国家代码，请参阅: 国家地区代码 - 维基百科</h5>
 
-#### 例1：
+例1：
 
 <h5>搜索美国的 Apache 服务器： app:Apache country:US</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/31.png) 
 
-#### IP 地址
+IP 地址
 
 <h5>ip: 搜索一个指定的 IP 地址</h5>
 
-#### 例：
+例：
 
 <h5>搜索指定ip信息，ip:121.42.173.26</h5>
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/32.png) 
 
 <h5>CIDR（无类别域间路由，Classless Inter-Domain Routing）是一个在Internet上创建附加地址的方法，这些地址提供给服务提供商（ISP），再由ISP分配给客户。CIDR将路由集中起来， 使一个IP地址代表主要骨干提供商服务的几千个IP地址，从而减轻Internet路由器的负担。</h5>
 
-#### 例1：
+例1：
 <h5>IP 的 CIDR 网段。 CIDR:114.114.114.114/8</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/33.png) 
 
-#### Web应用搜索
+Web应用搜索
 
 <h5>这里只讲解Web应用的查询方法</h5>
 
-#### 网站
+网站
 
-#### site:网站域名。 
+site:网站域名。 
 
-#### 例子：
+例子：
 
 <h5>查询有关taobao.com域名的信息，site:taobao.com</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/34.png) 
-#### 标题
-#### 例：
+标题
+ 例：
 <h5>搜索标题中包含该字符的网站，title:weblogic</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/35.png) 
 
-#### 关键词
+关键词
 
 <h5>keywords: <meta name="Keywords">定义的页面关键词。</h5> 
 
-#### 例子： keywords:Nginx
+例子： keywords:Nginx
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/36.png) 
-#### 描述
+描述
 <h5>desc: <meta name="description">定义的页面说明。 </h5>
 
-#### 例子： desc:Nginx
+例子： desc:Nginx
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/37.png) 
 ## 8、bing搜索引擎使用
