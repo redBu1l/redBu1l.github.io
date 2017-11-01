@@ -34,9 +34,9 @@ entries:
       output: web, pdf
       subfolderitems:
 
-      - title: 信息收集
-        url: /tag_formatting.html
-        output: web
+        - title: 信息收集
+          url: /tag_formatting.html
+          output: web
 
     - title: Web安全
       url: /mydoc_supported_features.html
