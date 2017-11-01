@@ -12,15 +12,6 @@ folder: mydoc
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%203_meitu_3.jpg)
 ------
 
----
-title: "信息收集"
-tagName: formatting
-search: exclude
-permalink: tag_formatting1.html
-sidebar: mydoc_sidebar
-folder: tags
----
-
 
 #信息收集
 
@@ -389,7 +380,3 @@ folder: tags
 
 
 
-
-
-
-{% include links.html %}
