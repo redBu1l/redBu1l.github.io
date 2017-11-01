@@ -374,6 +374,4 @@ folder: tags
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/54.png) 
 
 
-{% include taglogic.html %}
 
-{% include links.html %}
