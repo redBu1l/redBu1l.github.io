@@ -5,7 +5,7 @@ permalink: mydoc_introduction.html
 folder: mydoc
 ---
 为了更好服务大家在课程中遇到问题，每期我们都会进行一些问题交流和解答。`启程2班人额现在已满，请加启程3班-工具系列`。如果在看视频过程中，遇到相关问题，可以在论坛进行提问，相关贴主会对问题进行解答。或者直接加群进行讨论。由于群里只允许讨论和技术相关话题，或者转发技术贴，闲聊一律会被请出去。<br/>
-红日论坛![红日安全论坛](http://bbs.sec-redclub.com/hr/forum.php?mod=viewthread&tid=32&extra=page%3D1)
+红日论坛 ![](http://bbs.sec-redclub.com/hr/forum.php?mod=viewthread&tid=32&extra=page%3D1)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%BA%8C%E8%8A%82/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87.png)
 
 信息收集一般都是渗透测试前期用来收集，为了测试目标网站，不得不进行各种信息收集。信息收集要根据不同目标进行不同方向收集，工具部分会在下节课程进行讲解，根据个人渗透测试经验总结文章。本文只是抛砖引玉，希望可以给大家一个好的思路。如果文章中有环境搭建部分，靶场后续会在公众号中发布。视频在关注公众号以后，回复我要视频，管理员会在最快时间进行回复。
