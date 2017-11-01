@@ -8,9 +8,20 @@ folder: mydoc
 
 信息收集一般都是渗透测试前期用来收集，为了测试目标网站，不得不进行各种信息收集。信息收集要根据不同目标进行不同方向收集，工具部分会在下节课程进行讲解，根据个人渗透测试经验总结文章。本文只是抛砖引玉，希望可以给大家一个好的思路。如果文章中有环境搭建部分，靶场后续会在公众号中发布。视频在关注公众号以后，回复我要视频，管理员会在最快时间进行回复。
 首先公开上一节中一张图，开始今天主题讲解。
-信息收集思维导图
+## 信息收集思维导图
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%203_meitu_3.jpg)
+------
+
 ---
+title: "信息收集"
+tagName: formatting
+search: exclude
+permalink: tag_formatting1.html
+sidebar: mydoc_sidebar
+folder: tags
+---
+
+
 #信息收集
 
 ## 1、robots.txt
@@ -82,7 +93,6 @@ folder: mydoc
 
 ## 5、SVN导致文件泄露
 
----
 <h5>Subversion，简称SVN，是一个开放源代码的版本控制系统，相对于的RCS、CVS，采用了分支管理系统，它的设计目标就是取代CVS。互联网上越来越多的控制服务从CVS转移到Subversion。
 
 <h5>Subversion使用服务端—客户端的结构，当然服务端与客户端可以都运行在同一台服务器上。在服务端是存放着所有受控制数据的Subversion仓库，另一端是Subversion的客户端程序，管理着受控数据的一部分在本地的映射（称为“工作副本”）。在这两端之间，是通过各种仓库存取层（Repository Access，简称RA）的多条通道进行访问的。这些通道中，可以通过不同的网络协议，例如HTTP、SSH等，或本地文件的方式来对仓库进行操作。</h5>
@@ -376,6 +386,10 @@ folder: mydoc
 <h5>可以看到有些加密/解密功能，例如MD5、url、js、base64加解密等等</h5>
 
 ![](https://raw.githubusercontent.com/Orion1250/picture/master/picture-new/info-search/54.png) 
+
+
+
+
 
 
 {% include links.html %}
