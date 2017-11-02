@@ -42,7 +42,7 @@ entries:
         subfolderitems:
 
         - title: 安全工具之信息收集
-          url: /tag_formatting.html
+          url: /mydoc_introduction.html
           output: web
 
         - title: Navigation pages
