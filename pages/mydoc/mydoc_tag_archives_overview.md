@@ -1,18 +1,19 @@
 ---
-title: Tag archives overview
+title: 启程-安全思维导航图
 keywords: archives, tagging
-last_updated: July 3, 2016
+last_updated: November 2, 2017
 tags: [navigation]
-summary: "This is an overview to the tag archives section. Really the only reason this section is listed explicitly in the TOC here is to demonstrate how to add a third-level to the navigation."
+summary: "主要归纳一些本次初、中、高级安全课程思维导图."
 sidebar: mydoc_sidebar
 permalink: mydoc_tag_archives_overview.html
 folder: mydoc
 ---
 
-## Reasons for tags
+## 打造自己漏洞工具和靶场平台
 
-Tags provide alternate groupings for your content. In the documentation for this theme, there are a number of equally plausible ways I could have grouped the content. The folder names and items I chose for each item could have been grouped in other ways with good reason.
-
-Tags allow you to go beyond the traditional hierarchical classification and provide other groupings. For example, the same item can belong to two different groups. You can also introduce other dimensions not used in your table of contents, such as platform-specific tags or audience-specific tags.
-
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%202_meitu_2.jpg)
+原图地址：(https://github.com/redBu1l/Redclub-Launch/blob/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%202.png)[https://github.com/redBu1l/Redclub-Launch/blob/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%202.png]
+## 安全工具之信息收集
+![](https://github.com/redBu1l/Redclub-Launch/blob/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%203_meitu_3.jpg)
+原图地址：(https://github.com/redBu1l/Redclub-Launch/blob/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%203.png)[https://github.com/redBu1l/Redclub-Launch/blob/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%80%E8%8A%82/%E5%9B%BE%E7%89%87%203.png]
 {% include links.html %}
