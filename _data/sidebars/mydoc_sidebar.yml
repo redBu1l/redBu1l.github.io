@@ -45,11 +45,19 @@ entries:
           url: /mydoc_introduction.html
           output: web
 
-        - title: Navigation pages
+        - title: 更新中
           url: /tag_navigation.html
           output: web
       
-
+    - title: Web安全
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+    - title: 无线安全
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+    - title: 主机安全
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
 
       
   - title: 靶场篇
