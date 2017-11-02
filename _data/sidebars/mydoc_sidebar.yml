@@ -19,7 +19,7 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: 基础篇
+  - title: 启程安全课程
     output: web, pdf
     folderitems:
 
@@ -44,27 +44,34 @@ entries:
       url: /mydoc_support.html
       output: web, pdf
 
-  - title: 基础篇1
+  - title: 基础篇
     output: web
     folderitems:
 
-    - title: Tag archives overview
-      url: /mydoc_tag_archives_overview.html
-      output: web
-
       subfolders:
-      - title: Tag archive pages
+      - title: 安全工具
         output: web
         subfolderitems:
 
-        - title: Formatting pages
-          url: /tag_formatting.html
-          output: web
+        - title: 安全工具之信息收集
+          url: /mydoc_introduction.html
+          output: web, pdf
 
         - title: Navigation pages
           url: /tag_navigation.html
-          output: web    
+          output: web   
+          
+    - title: Web安全
+      url: /mydoc_tag_archives_overview.html
+      output: web  
       
+    - title: 无线安全
+      url: /mydoc_tag_archives_overview.html
+      output: web 
+      
+    - title: 系统安全
+      url: /mydoc_tag_archives_overview.html
+      output: web 
       
   - title: 靶场篇
     output: web, pdf
