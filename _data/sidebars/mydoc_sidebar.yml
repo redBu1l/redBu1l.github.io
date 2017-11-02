@@ -28,7 +28,6 @@ entries:
       output: web, pdf
       type: homepage
 
-
   - title: 基础篇
     output: web
     folderitems:
