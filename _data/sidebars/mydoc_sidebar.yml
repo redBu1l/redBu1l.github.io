@@ -47,10 +47,16 @@ entries:
   - title: 靶场篇
     output: web, pdf
     folderitems:
-
+    
+    subfolders:
     - title: 靶场架构
       url: /mydoc_release_notes_60.html
       output: web, pdf
+      subfolderitems:
+
+        - title: 信息收集
+          url: /tag_formatting.html
+          output: web
 
     - title: SQL注入编写
       url: /mydoc_release_notes_50.html
