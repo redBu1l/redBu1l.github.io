@@ -61,17 +61,17 @@ entries:
           url: /tag_navigation.html
           output: web   
           
-    - title: Web安全
-      url: /mydoc_tag_archives_overview.html
-      output: web  
+      - title: Web安全
+        url: /mydoc_tag_archives_overview.html
+        output: web  
       
-    - title: 无线安全
-      url: /mydoc_tag_archives_overview.html
-      output: web 
+      - title: 无线安全
+        url: /mydoc_tag_archives_overview.html
+        output: web 
       
-    - title: 系统安全
-      url: /mydoc_tag_archives_overview.html
-      output: web 
+      - title: 系统安全
+        url: /mydoc_tag_archives_overview.html
+        output: web 
       
   - title: 靶场篇
     output: web, pdf
