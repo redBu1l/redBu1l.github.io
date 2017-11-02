@@ -47,19 +47,23 @@ entries:
   - title: 基础篇
     output: web
     folderitems:
-
-    subfolders:
-    - title: 安全工具
+    
+    - title:安全
+      url: /mydoc_tag_archives_overview.html
       output: web
-      subfolderitems:
 
-      - title: 安全工具之信息收集
-        url: /mydoc_introduction.html
-        output: web, pdf
+      subfolders:
+      - title: 安全工具
+        output: web
+        subfolderitems:
 
-      - title: Navigation pages
-        url: /tag_navigation.html
-        output: web   
+        - title: 安全工具之信息收集
+          url: /mydoc_introduction.html
+          output: web, pdf
+
+        - title: Navigation pages
+          url: /tag_navigation.html
+          output: web   
           
     - title: Web安全
       url: /mydoc_tag_archives_overview.html
