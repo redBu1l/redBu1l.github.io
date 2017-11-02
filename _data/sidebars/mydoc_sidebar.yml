@@ -44,18 +44,36 @@ entries:
       url: /mydoc_support.html
       output: web, pdf
 
+    - title: 基础篇1
+    output: web
+    folderitems:
+
+    - title: Tag archives overview
+      url: /mydoc_tag_archives_overview.html
+      output: web
+
+      subfolders:
+      - title: Tag archive pages
+        output: web
+        subfolderitems:
+
+        - title: Formatting pages
+          url: /tag_formatting.html
+          output: web
+
+        - title: Navigation pages
+          url: /tag_navigation.html
+          output: web    
+      
+      
   - title: 靶场篇
     output: web, pdf
     folderitems:
     
-    subfolders:
+    
     - title: 靶场架构
       url: /mydoc_release_notes_60.html
       output: web, pdf
-      subfolderitems:
-        - title: 信息收集
-          url: /tag_formatting.html
-          output: web
 
     - title: SQL注入编写
       url: /mydoc_release_notes_50.html
