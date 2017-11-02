@@ -45,25 +45,25 @@ entries:
       output: web, pdf
 
     - title: 基础篇1
-    output: web
-    folderitems:
-
-    - title: Tag archives overview
-      url: /mydoc_tag_archives_overview.html
       output: web
+      folderitems:
 
-      subfolders:
-      - title: Tag archive pages
+      - title: Tag archives overview
+        url: /mydoc_tag_archives_overview.html
         output: web
-        subfolderitems:
 
-        - title: Formatting pages
-          url: /tag_formatting.html
+        subfolders:
+        - title: Tag archive pages
           output: web
+          subfolderitems:
 
-        - title: Navigation pages
-          url: /tag_navigation.html
-          output: web    
+          - title: Formatting pages
+            url: /tag_formatting.html
+            output: web
+
+          - title: Navigation pages
+            url: /tag_navigation.html
+            output: web    
       
       
   - title: 靶场篇
