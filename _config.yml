@@ -3,7 +3,7 @@ repository: tomjoht/documentation-theme-jekyll
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: 红日-启程
+topnav_title: 红日安全-启程
 # this appears on the top navigation bar next to the home button
 
 site_title: sec-redclub.com
