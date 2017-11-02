@@ -28,13 +28,10 @@ entries:
       output: web, pdf
       type: homepage
 
+
   - title: 基础篇
     output: web
     folderitems:
-    
-    - title:安全
-      url: /mydoc_tag_archives_overview.html
-      output: web
 
       subfolders:
       - title: 安全工具
