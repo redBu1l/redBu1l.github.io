@@ -48,30 +48,30 @@ entries:
     output: web
     folderitems:
 
-      subfolders:
-      - title: 安全工具
-        output: web
-        subfolderitems:
+    subfolders:
+    - title: 安全工具
+      output: web
+      subfolderitems:
 
-        - title: 安全工具之信息收集
-          url: /mydoc_introduction.html
-          output: web, pdf
+      - title: 安全工具之信息收集
+        url: /mydoc_introduction.html
+        output: web, pdf
 
-        - title: Navigation pages
-          url: /tag_navigation.html
-          output: web   
+      - title: Navigation pages
+        url: /tag_navigation.html
+        output: web   
           
-      - title: Web安全
-        url: /mydoc_tag_archives_overview.html
-        output: web  
+    - title: Web安全
+      url: /mydoc_tag_archives_overview.html
+      output: web  
       
-      - title: 无线安全
-        url: /mydoc_tag_archives_overview.html
-        output: web 
+    - title: 无线安全
+      url: /mydoc_tag_archives_overview.html
+      output: web 
       
-      - title: 系统安全
-        url: /mydoc_tag_archives_overview.html
-        output: web 
+    - title: 系统安全
+      url: /mydoc_tag_archives_overview.html
+      output: web 
       
   - title: 靶场篇
     output: web, pdf
