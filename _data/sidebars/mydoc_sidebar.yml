@@ -28,10 +28,13 @@ entries:
       output: web, pdf
       type: homepage
 
-
   - title: 基础篇
     output: web
     folderitems:
+
+    - title: 安全课程思维图
+      url: /mydoc_tag_archives_overview.html
+      output: web
 
       subfolders:
       - title: 安全工具
@@ -39,24 +42,15 @@ entries:
         subfolderitems:
 
         - title: 安全工具之信息收集
-          url: /mydoc_introduction.html
-          output: web, pdf
+          url: /tag_formatting.html
+          output: web
 
         - title: Navigation pages
           url: /tag_navigation.html
-          output: web   
-          
-    - title: Web安全
-      url: /mydoc_tag_archives_overview.html
-      output: web  
+          output: web
       
-    - title: 无线安全
-      url: /mydoc_tag_archives_overview.html
-      output: web 
-      
-    - title: 系统安全
-      url: /mydoc_tag_archives_overview.html
-      output: web 
+
+
       
   - title: 靶场篇
     output: web, pdf
