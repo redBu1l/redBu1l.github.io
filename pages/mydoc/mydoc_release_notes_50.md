@@ -2,7 +2,7 @@
 title: 渗透测试前言
 tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
-last_updated: July 3, 2016
+last_updated: November 9, 2017
 summary: "大佬们教你如何利用靶场进行漏洞挖掘，从前端到服务器一路飙起来。从基础讲起，主要涉及渗透测试一些方法和套路"
 sidebar: mydoc_sidebar
 permalink: mydoc_release_notes_50.html

@@ -1,7 +1,7 @@
 ---
 title: 启程-安全思维导航图
 keywords: archives, tagging
-last_updated: November 2, 2017
+last_updated: November 9, 2017
 tags: [navigation]
 summary: "主要归纳一些本次初、中、高级安全课程思维导图."
 sidebar: mydoc_sidebar
