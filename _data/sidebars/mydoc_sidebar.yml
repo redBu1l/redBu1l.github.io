@@ -48,14 +48,16 @@ entries:
         - title: 更新中
           url: /tag_navigation.html
           output: web
+          
       subfolders:   
       - title: 渗透测试
-        output: web, pdf
+        output: web
         subfolderitems:
         
-        - title:渗透测试前言
+        - title: 渗透测试前言
           url: /mydoc_release_notes_50.html
-          output: web 
+          output: web
+          
     - title: Web安全
       url: /mydoc_release_notes_50.html
       output: web, pdf
