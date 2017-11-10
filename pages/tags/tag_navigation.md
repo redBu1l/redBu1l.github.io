@@ -17,7 +17,7 @@ folder: tags
 可以使用dig命令对DNS服务器进行挖掘
 Dig命令后面直接跟域名，回车即可
  ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/2.jpg)
-#### 【Dig常用选项】
+`【Dig常用选项】`
 >-c选项，可以设置协议类型（class），包括IN(默认)、CH和HS。
 >
 >-f选项，dig支持从一个文件里读取内容进行批量查询，这个非常体贴和方便。文件的内容要求一行为一个查询请求。来个实际例子吧：
@@ -35,12 +35,12 @@ Dig命令后面直接跟域名，回车即可
 >-x选项，是逆向查询选项。可以查询IP地址到域名的映射关系。举一个例子：
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/5.jpg)
-#### 【跟踪dig全过程】
+`【跟踪dig全过程】`
 dig非常著名的一个查询选项就是+trace，当使用这个查询选项后，dig会从根域查询一直跟踪直到查询到最终结果，并将整个过程信息输出出来
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/6.jpg)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/7.jpg)
-#### 【精简dig输出】
+`【精简dig输出】`
 1. 使用+nocmd的话，可以节省输出dig版本信息。
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/8.jpg)
@@ -231,7 +231,7 @@ layer子域名检测工具主要是windows一款二级域名检测工具，利�
 ## 9、Nmap
 ***
 `Nmap`是一个网络连接端口扫描软件，用来扫描网上电脑开放的网络连接端口。确定哪些服务运行在哪些连接端口，并且推断计算机运行哪个操作系统。它是网络管理员必用的软件之一，以及用以评估网络系统安全。
-#### 功能:
+`功能:`
 
 >
 >1、	主机发现
@@ -254,7 +254,7 @@ Nmap<扫描选项><扫描目标>
 
 >主机发现的原理与Ping命令类似，发送探测包到目标主机，如果收到回复，那么说明目标主机是开启的。Nmap支持十多种不同的主机探测方式，比如发送`ICMP ECHO/TIMESTAMP/NETMASK`报文、发送TCPSYN/ACK包、发送`SCTP INIT/COOKIE-ECHO`包，用户可以在不同的条件下灵活选用不同的方式来探测目标机。
 
-#### 主机发现的基本用法
+`主机发现的基本用法`
 
 >
 >1. -sL: List Scan 列表扫描，仅将指定的目标的IP列举出来，不进行主机发现。 
@@ -344,7 +344,7 @@ Nmap<扫描选项><扫描目标>
 
  ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/28.jpg)
  
-#### 简要的介绍版本的侦测原理。版本侦测主要分为以下几个步骤：
+`简要的介绍版本的侦测原理。版本侦测主要分为以下几个步骤：`
 1. 首先检查`open`与`open|filtered`状态的端口是否在排除端口列表内。如果在排除列表，将该端口剔除。
 2. 如果是TCP端口，尝试建立TCP连接。尝试等待片刻（通常6秒或更多，具体时间可以查询文件`nmap-services-probes`中`Probe TCP NULL q||`对应的totalwaitms）。通常在等待时间内，会接收到目标机发送的“WelcomeBanner”信息。nmap将接收到的`Banner`与`nmap-services-probes`中`NULL` probe中的签名进行对比。查找对应应用程序的名字与版本信息。
 3. 如果通过“Welcome Banner”无法确定应用程序版本，那么nmap再尝试发送其他的探测包（即从nmap-services-probes中挑选合适的probe），将probe得到回复包与数据库中的签名进行对比。如果反复探测都无法得出具体应用，那么打印出应用返回报文，让用户自行进一步判定。
@@ -362,7 +362,7 @@ Nmap<扫描选项><扫描目标>
  ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/29.jpg)
  
 Nmap使用TCP/IP协议栈指纹来识别不同的操作系统和设备。在RFC规范中，有些地方对TCP/IP的实现并没有强制规定，由此不同的TCP/IP方案中可能都有自己的特定方式。Nmap主要是根据这些细节上的差异来判断操作系统的类型的。
-#### 具体实现方式如下：
+`具体实现方式如下：`
 Nmap内部包含了2600多已知系统的指纹特征（在文件nmap-os-db文件中）。将此指纹数据库作为进行指纹对比的样本库。分别挑选一个open和closed的端口，向其发送经过精心设计的TCP/UDP/ICMP数据包，根据返回的数据包生成一份系统指纹。将探测生成的指纹与nmap-os-db中指纹进行对比，查找匹配的系统。如果无法匹配，以概率形式列举出可能的系统。
 1. -O: 指定Nmap进行OS侦测。 
 	--osscan-limit: 限制Nmap只对确定的主机的进行OS探测（至少需确知该主机分别有一个open和closed的端口）。 
@@ -396,11 +396,11 @@ Nmap内部包含了2600多已知系统的指纹特征（在文件nmap-os-db文�
 
  ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/35.jpg)
  
-#### 优势：
+`优势：`
 * 功能灵活强大，支持多种目标，大量计算机的同时扫描；
 * 开源，相关帮助文档十分详细；
 * 流行，由于其具有强大的扫描机探测功能，，已被成千上万安全专家使用。
-#### 劣势：
+`劣势：`
 * Nmap参数众多，难以一一记忆；
 
 ## 10、DirBuster
