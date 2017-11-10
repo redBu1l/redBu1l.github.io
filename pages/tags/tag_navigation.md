@@ -17,6 +17,7 @@ folder: tags
 可以使用dig命令对DNS服务器进行挖掘
 Dig命令后面直接跟域名，回车即可
  ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/2.jpg)
+ 
 `【Dig常用选项】`
 >-c选项，可以设置协议类型（class），包括IN(默认)、CH和HS。
 >
@@ -35,11 +36,13 @@ Dig命令后面直接跟域名，回车即可
 >-x选项，是逆向查询选项。可以查询IP地址到域名的映射关系。举一个例子：
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/5.jpg)
+
 `【跟踪dig全过程】`
 dig非常著名的一个查询选项就是+trace，当使用这个查询选项后，dig会从根域查询一直跟踪直到查询到最终结果，并将整个过程信息输出出来
 
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/6.jpg)
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/7.jpg)
+
 `【精简dig输出】`
 1. 使用+nocmd的话，可以节省输出dig版本信息。
 
@@ -124,7 +127,7 @@ Dig可以用来查域传送漏洞,前面介绍了dig的使用，若将查询类�
 
 在进行了基本域名收集以后，如果能通过主域名得到所有子域名信息，再通过子域名查询其对应的主机IP，这样我们能得到一个较为完整的信息。除了默认使用，我们还可以自己定义字典来进行域名爆破。
 * 使用`fierce`工具，可以进行域名列表查询：`fierce -dns domainName`
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/14.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/14.jpg)
  
 >输出结果表明，程序首先进行了域传送测试，域传送通过一条命令就能获取服务器上所有的域名信息。如果一次就能简单获取服务器上所有记录域名信息,就不再暴力破解。
 >
@@ -149,12 +152,13 @@ Dig可以用来查域传送漏洞,前面介绍了dig的使用，若将查询类�
 - 实例1：
 `theHarvester -d sec-redclub.com -l 100 -b baidu`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/15.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/15.jpg)
  
 - 实战2：
   + 输出到html文件中，可以更清晰的看到搜索的网站信息的模型。
 >theHarvester  -d sec-redclub.com -l 100 -b baidu -f myresults.html
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/16.jpg)
+
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/16.jpg)
  
 ## 6、DNS枚举工具DNSenum
 ***
@@ -188,7 +192,7 @@ DNS枚举。在终端执行如下所示的命令：
 
 ## 7、subDomainsbrute二级域名收集
 ***
-```
+
 二级域名是指顶级域名之下的域名，在国际顶级域名下，它是指域名注册人的网上名称；
 在国家顶级域名下，它是表示注册企业类别的符号。
 我国在国际互联网络信息中心（Inter NIC） 正式注册并运行的顶级域名是CN，这也是我国的一级域名。
@@ -199,24 +203,25 @@ DNS枚举。在终端执行如下所示的命令：
 用于互联网络信息中心和运行中心的net；
 用于非盈利组织的org。
 而行政区域名有34个，分别对应于我国各省、自治区和直辖市。（摘自百度百科）
- ```
+
  
 >以上为工具默认参数，如果是新手，请直接跟主域名即可，不用进行其它设置。
- ![](https://github.com/redBu1l/Redclub-Launch/blob/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/20.jpg?raw=true)
+
+![](https://github.com/redBu1l/Redclub-Launch/blob/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/20.jpg?raw=true)
  
 `Python subDomainsbrute.py sec-redclub.com`
 ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/21.jpg)
 
 就可以直接运行，等待结果，最后在工具文件夹下面存在txt文件，直接导入扫描工具就可以进行扫描了。
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/22.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/22.jpg)
  
 ## 8、layer子域名检测工具
 ***
 layer子域名检测工具主要是windows一款二级域名检测工具，利用爆破形式。
 工具作者：[http://www.cnseay.com/4193/](http://www.cnseay.com/4193/)
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/23.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/23.jpg)
  
 域名对话框直接输入域名就可以进行扫描了，工具显示比较细致，有域名、解析ip、cnd列表、web服务器和网站状态，这些对于一个安全测试人员，非常重要。如下操作：
 
@@ -252,7 +257,7 @@ Nmap的参数和选项繁多，功能非常丰富。我们先来看一下Nmap的
 （详细教程及下载方式参见：[]()http://nmap.org/）
 Nmap<扫描选项><扫描目标>
 
->主机发现的原理与Ping命令类似，发送探测包到目标主机，如果收到回复，那么说明目标主机是开启的。Nmap支持十多种不同的主机探测方式，比如发送`ICMP ECHO/TIMESTAMP/NETMASK`报文、发送TCPSYN/ACK包、发送`SCTP INIT/COOKIE-ECHO`包，用户可以在不同的条件下灵活选用不同的方式来探测目标机。
+主机发现的原理与Ping命令类似，发送探测包到目标主机，如果收到回复，那么说明目标主机是开启的。Nmap支持十多种不同的主机探测方式，比如发送`ICMP ECHO/TIMESTAMP/NETMASK`报文、发送TCPSYN/ACK包、发送`SCTP INIT/COOKIE-ECHO`包，用户可以在不同的条件下灵活选用不同的方式来探测目标机。
 
 `主机发现的基本用法`
 
@@ -282,7 +287,7 @@ Nmap<扫描选项><扫描目标>
 扫描局域网`192.168.80.1/24`范围内哪些IP的主机是活动的。
 - 命令如下：`nmap –sn 192.168.80.1/24`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/25.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/25.jpg)
  
 >由图可知：`192.168.80.1`、`192.168.80.254`、`192.168.80.166`三台主机处于存活状态。
 
@@ -290,7 +295,7 @@ Nmap<扫描选项><扫描目标>
 
 - 命令如下：1nmap –sP 192.168.80.100-2001
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/26.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/26.jpg)
  
 端口扫描是Nmap最基本最核心的功能，用于确定目标主机的TCP/UDP端口的开放情况。默认情况下，Nmap会扫描1000个最有可能开放的TCP端口。Nmap通过探测将端口划分为6个状态：
 
@@ -306,6 +311,7 @@ Nmap<扫描选项><扫描目标>
 >open|filtered：端口是开放的或被屏蔽。
 >
 >closed|filtered ：端口是关闭的或被屏蔽。
+
 - 端口扫描方面非常强大，提供了很多的探测方式：
 
 >
@@ -331,7 +337,8 @@ Nmap<扫描选项><扫描目标>
 * -sO: 使用IP protocol 扫描确定目标机支持的协议类型。
 * -b <FTP relay host>: 使用FTP bounce scan扫描方式 
 * -p指定端口扫描
->在此，我们以主机192.168.80.166为例。命令如下：
+
+`在此，我们以主机192.168.80.166为例。命令如下：`
 
 * `nmap -sS -p0-65535 -T4 192.168.80.166`
 参数`-sS`表示使用TCP SYN方式扫描TCP端口；`-p0-65535`表示扫描所有端口；`-T4`表示时间级别配置4级；
@@ -356,10 +363,12 @@ Nmap<扫描选项><扫描目标>
 8. --version-light: 指定使用轻量侦测方式 (intensity 2) 
 9. --version-all: 尝试使用所有的probes进行侦测 (intensity 9) 
 10. --version-trace: 显示出详细的版本侦测过程信息。 
+
 >对主机192.168.80.166进行版本侦测。
+
 * 命令如下：`nmap -sV -p0-65535 -T4 192.168.80.166`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/29.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/29.jpg)
  
 Nmap使用TCP/IP协议栈指纹来识别不同的操作系统和设备。在RFC规范中，有些地方对TCP/IP的实现并没有强制规定，由此不同的TCP/IP方案中可能都有自己的特定方式。Nmap主要是根据这些细节上的差异来判断操作系统的类型的。
 `具体实现方式如下：`
@@ -367,34 +376,35 @@ Nmap内部包含了2600多已知系统的指纹特征（在文件nmap-os-db文�
 1. -O: 指定Nmap进行OS侦测。 
 	--osscan-limit: 限制Nmap只对确定的主机的进行OS探测（至少需确知该主机分别有一个open和closed的端口）。 
 2. --osscan-guess: 大胆猜测对方的主机的系统类型。由此准确性会下降不少，但会尽可能多为用户提供潜在的操作系统。 
+
 > 命令：`nmap –O 192.168.80.166`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/30.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/30.jpg)
  
 3. -vv详细显示扫描状态
 `nmap -p21,80,445,3306 -vv 192.168.80.166`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/31.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/31.jpg)
  
 4. --script 使用nse脚本，也可自行编写nse脚本，nmap有580多个脚本
 
 `nmap --script=auth 192.168.80.166`
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/32.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/32.jpg)
  
 5. --script=brute 对弱口令进行暴力破解
 `nmap --script=brute 192.168.80.166`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/33.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/33.jpg)
  
 6. --script=default 使用默认nse脚本搜集应用的信息
 `nmap --script=default 192.168.80.166`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/34.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/34.jpg)
  
 7. --script=vuln 检测常见漏洞
 `nmap --script=vuln 192.168.80.166`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/35.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/35.jpg)
  
 `优势：`
 * 功能灵活强大，支持多种目标，大量计算机的同时扫描；
@@ -411,17 +421,17 @@ Java运行环境+DirBuster程序包
 * 双击运行`DirBuster.jar`
 * 在URL中输入目标URL或者主机IP地址
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/36.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/36.jpg)
  
 * 在`file with list of dirs/files` 栏后点击browse，选择破解的字典库为`directory-list-2.3-small.txt`
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/37.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/37.jpg)
  
 * 将File extension中填入正确的文件后缀，默认为`php`，如果为`jsp`、`asp`、`aspx`页面，需要填入`jsp`、`asp`、`aspx`
 * 同样可以选择自己设置字典，线程等等
 * 其他选项不变，点击右下角的start，启动目录查找
 
- ![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/38.jpg)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%9B%9B%E8%8A%82/%E5%B0%BA%E5%AF%B8/38.jpg)
  
 * 观察返回结果，可点击右下角的report，生成目录报告
 优点：
