@@ -44,9 +44,6 @@ entries:
         - title: 安全工具之信息收集
           url: /mydoc_introduction.html
           output: web
-        - title: 渗透测试前言
-          url: /mydoc_release_notes_50.html
-          output: web
 
         - title: 安全工具之信息收集续
           url: /tag_navigation.html
@@ -55,10 +52,18 @@ entries:
 
         
 
-          
-    - title: Web安全
-      url: /mydoc_release_notes_50.html
-      output: web, pdf
+      subfolders:    
+      - title: Web安全
+        output: web, pdf
+        subfolderitems:
+        
+        - title: 渗透测试前言
+          url: /mydoc_release_notes_50.html
+          output: web
+        - title: 渗透XSS系列漏洞
+          url: /mydoc_release_notes_50.html
+          output: web
+         
     - title: 主机安全
       url: /mydoc_release_notes_50.html
       output: web, pdf
