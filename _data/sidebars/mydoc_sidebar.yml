@@ -52,7 +52,7 @@ entries:
       url: /mydoc_release_notes_50.html
       output: web
     - title: 渗透XSS系列漏洞
-      url: /mydoc_release_notes_100.html
+      url: /mydoc_release_notes_60.html
       output: web
          
     - title: 主机安全
