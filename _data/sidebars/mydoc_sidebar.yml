@@ -45,6 +45,9 @@ entries:
     - title: 安全工具之信息收集续
       url: /tag_navigation.html
       output: web
+    - title: 安全工具之Burpsuite使用
+      url: /mydoc_pages.html
+      output: web, pdf
           
 
         
@@ -55,9 +58,7 @@ entries:
       url: /mydoc_release_notes_60.html
       output: web
          
-    - title: 主机安全
-      url: /mydoc_release_notes_50.html
-      output: web, pdf
+
 
       
   - title: 靶场篇

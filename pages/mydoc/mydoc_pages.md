@@ -1,183 +1,224 @@
 ---
-title: Pages
+title: 安全工具之Burpsuite使用
 tags: [getting_started, formatting, content_types]
 keywords: pages, authoring, exclusion, frontmatter
 last_updated: July 16, 2016
-summary: "This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the summary tag. This functions similar in purpose to the shortdesc element in DITA."
+summary: "主要讲解安全工具使用，由于在渗透实战中，Burp在Web渗透过程中，使用比较高，此次课程给大家讲解Burp使用，下次课程给大家讲解其它渗透过程中比较常用工具。"
 sidebar: mydoc_sidebar
 permalink: mydoc_pages.html
 folder: mydoc
 ---
 
-## Where to author content
-Use a text editor such as Sublime Text, WebStorm, IntelliJ, or Atom to create pages. Atom is recommended because it's created by Github, which is driving some of the Jekyll development through Github Pages.
+### burp简介
 
-## Where to save pages
+**Burp Suite**是Web应用程序测试的最佳工具之一，可以对请求的数据包进行拦截和修改,扫描常见的web安全漏洞，暴力破解登录表单、遍历数据等等。
 
-You can store your pages in any folder structures you want, with any level of folder nesting. The site output will pull all of those pages out of their folders and put them into the root directory. Check out the \_site folder, which is where Jekyll is generated, to see the difference between your project's structure and the resulting site output.
+### Burp所需环境
 
-The listing of all pages in the root directory (which happens when you add a permalink property to the pages) is what allows the relative linking and offline viewing of the site to work.
+Burp Suite是Java编写的，所以在使用前需要安装Jdk环境，这里不进行具体讲解如何安装jdk,安装完成后将jdk相关目录添加到环境变量中。
 
-## Frontmatter
+### 主要功能
 
-Make sure each page has frontmatter at the top like this:
+首先，我们看下burp都有哪些功能，并且都是用来做什么的。
 
+* **proxy** – Burp Suite设置代理，抓取数据包。
 
-```yaml
----
-title: Alerts
-tags: [formatting]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
-summary: "You can insert notes, tips, warnings, and important alerts in your content."
-sidebar: mydoc_sidebar
-permalink: mydoc_alerts.html
----
-```
+* **Spider** – Burp Suite的蜘蛛功能是用来抓取Web应用程序的链接和内容等。
 
-Frontmatter is always formatted with three hyphens at the top and bottom. Your frontmatter must have a `title` and `permalink` value. All the other values are optional.
+* **Scanner** – 是用来扫描Web应用程序漏洞的，可以发现常见的web安全漏洞，但会存在误报的可能。
 
-Note that you cannot use variables in frontmatter.
+* **Intruder** – 可进行Web应用程序模糊测试,进行暴力猜解等。
 
-The following table describes each of the frontmatter that you can use with this theme:
+* **Repeater** – 对数据包进行重放，可分析服务器返回情况，判断修改参数的影响。
 
-| Frontmatter | Required? | Description |
-|-------------|-------------|-------------|
-| **title** | Required | The title for the page |
-| **tags** | Optional | Tags for the page. Make all tags single words, with underscores if needed (rather than spaces). Separate them with commas. Enclose the whole list within brackets. Also, note that tags must be added to \_data/tags_doc.yml to be allowed entrance into the page. This prevents tags from becoming somewhat random and unstructured. You must create a tag page for each one of your tags following the pattern shown in the tags folder. (Tag pages aren't automatically created.)  |
-| **keywords** | Optional | Synonyms and other keywords for the page. This information gets stuffed into the page's metadata to increase SEO. The user won't see the keywords, but if you search for one of the keywords, it will be picked up by the search engine.  |
-| **last_updated**  | Optional | The date the page was last updated. This information could helpful for readers trying to evaluate how current and authoritative information is. If included, the last_updated date appears in the footer of the page in small font.|
-| **sidebar** | Required | Refers to the sidebar data file for this page. Don't include the ".yml" file extension for the sidebar &mdash; just provide the file name. If no sidebar is specified, this value will inherit the `default` property set in your \_config.yml file for the page's frontmatter. |
-| **summary** | Optional | A 1-2 word sentence summarizing the content on the page. This gets formatted into the summary section in the page layout. Adding summaries is a key way to make your content more scannable by users (check out [Jakob Nielsen's site](http://www.nngroup.com/articles/corporate-blogs-front-page-structure/) for a great example of page summaries.) The only drawback with summaries is that you can't use variables in them. |
-| **permalink**| Required | The permalink *must* match the filename in order for automated links to work. Additionally, you must include the ".html" in the filename. Do not put forward slashes around the permalink (this makes Jekyll put the file inside a folder in the output). When Jekyll builds the site, it will put the page into the root directory rather than leaving it in a subdirectory or putting it inside a folder and naming the file index.html. Having all files flattened in the root directory is essential for relative linking to work and for all paths to JS and CSS files to be valid. |
-| **datatable** | Optional | 'true'. If you add `datatable: true` in the frontmatter, scripts for the [jQuery Datatables plugin](https://www.datatables.net/) get included on the page. You can see the scripts that conditionally appear by looking in the \_layouts/default.html page. |
-| **toc** | Optional | If you specify `toc: false` in the frontmatter, the page won't have the table of contents that appears below the title. The toc refers to the list of jump links below the page title, not the sidebar navigation. You probably want to hide the TOC on the homepage and product landing pages.|
+* **Sequencer** – 用来检查Web应用程序提供的会话令牌的随机性.并执行各种测试。
 
-## Colons in page titles
+* **Decoder** – 对数据进行加解密操作，包含url、html、base64等等。
 
-If you want to use a colon in your page title, you must enclose the title's value in quotation marks.
+* **Comparer** – 此功能用来执行任意的两个请求,响应或任何其它形式的数据之间的比较。
 
-## Page names and excluding files from outputs
+* **extender** - 加载Burp Suite的扩展，使用你自己的或第三方代码来扩展Burp Suite的功能。
 
-By default, everything in your project is included in the output. You can exclude all files that don't belong to that project by specifying the file name, the folder name, or by using wildcards in your configuration file:
+* **options** - 设置burp，字体，编码等等
 
-```yaml
-exclude:
+* **alerts** - 是用来存放报错信息的，用来解决错误
 
-- filename.md
-- subfolder_name/
-- mydoc_*
-- gitignore
-```
+### 功能介绍
 
-Wildcards will exclude every match after the `*`.
+本次我们主要学习如何使用burp抓取数据包的proxy功能。
 
-## Saving pages as drafts
+首先，打开burp，并进入到proxy功能，可以看到`options`、`Histroy`、`intercept`、`websockets history`标签。
 
-If you add `published: false` in the frontmatter, your page won't be published. You can also move draft pages into the \_drafts folder to exclude them from the build. With posts, you can also keep them as drafts by omitting the date in the title.
+#### Intercept模块
 
-## Markdown or HTML format
+**Intercept** - 控制抓取到的数据包，并可将数据包放行或舍弃，以及发送到其他功能中。
 
-Pages can be either Markdown or HTML format (specified through either an .md or .html file extension).
+tutututututut
 
-If you use Markdown, you can also include HTML formatting where needed. But if your format is HTML, you must add a `markdown="1"` attribute to the element in order to use Markdown inside that HTML element:
+**Intercept**相关功能
 
-```
-<div markdown="1">This is a [link](http://exmaple.com).</div>
-```
+* **Forward** - 将抓取或修改后的数据包发送到服务器端
 
-For your Markdown files, note that a space or two indent will set text off as code or blocks, so avoid spacing indents unless intentional.
+* **Drop** - 丢弃抓取到的数据包，不与服务器端进行交互该数据包
 
-If you have a lot of HTML, as long as the top and bottom tags of the HTML are flush left in a Markdown file, all the tags inside those bookend HTML tags will render as HTML, regardless of their indentation. (This can be especially useful for tables.)
+* **Interceptionis on/off** - 是否拦截数据包，on表示拦截，off表示放行
 
+tututututut
 
-## Page names
+* **Action** - 可对该数据包做哪些操作，同样数据包处右击和action效果相同
 
-I recommend prefixing your page names with the product, such as "mydoc_pages" instead of just "pages." This way if you have other products that also have topics with generic names such as "pages," there won't be naming conflicts.
+tututututut
 
-Additionally, consider adding the product name in parentheses after the title, such as "Pages (Mydoc)" so that users can clearly navigate different topics for each product.
+* **Commentfield** - 为请求包或响应包设置注释，并可选择相应的颜色，更容易在history中查找到
 
-## Kramdown Markdown
+tutututu
 
-Kramdown is the Markdown flavor used in the theme. This mostly aligns with Github-flavored Markdown, but with some differences in the indentation allowed within lists. Basically, Kramdown requires you to line up the indent between list items with the first starting character after the space in your list item numbering. See this [blog post on Kramdown and Rouge](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/) for more details.
+* **？** - 查看帮助信息。可通过帮助信息查看功能的使用
 
-You can use standard Multimarkdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code. The configuration file shows the Markdown processor and extension:
+tutututututu
+ 
+同样，burp有四种消息类型显示数据包
 
-```yaml
-highlighter: rouge
-markdown: kramdown
-kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
-```
+**Raw** - 以纯文本形式显示数据包
 
-## Automatic mini-TOCs
+tutututut
 
-By default, a TOC appears at the top of your pages and posts. If you don't want the TOC to appear for a specific page, such as for a landing page or other homepage, add `toc: false` in the frontmatter of the page.
+**Params** - 包含参数URL 查询字符串、cookies的请求，并可双机该请求进行修改 
 
-The mini-TOC requires you to use the `##` Markdown syntax for headings. If you use `<h2>` elements, you must add an ID attribute for the heading element in order for it to appear in the mini-TOC (for example, `<h2 id="mysampleid">Heading</h2>`.
+tututututu
 
-## Headings
+**Headers** - 以名称、值的形式显示获取的数据包。
 
-Use pound signs before the heading title to designate the level. Note that kramdown requires headings to have one space before and after the heading. Without this space above and below, the heading won't render into HTML.
+tutututut
 
-```
-## Second-level heading
-```
+**Hex** - 可编辑数据包的二进制数据，在进行00截断时非常好用。
 
-**Result:**
+tutututut
 
-## Second-level heading
+同样，burp具有搜索功能，可以搜索当前数据包中你想要的内容，并且会显示符合内容的个数以及位置
 
------
+tututututut
 
-```
-### Third-level heading
-```
-**Result:**
+#### histroy模块
 
-### Third-level heading
+**Histroy** - 记录设置代理后浏览器访问的页面数据包，详细记录数据包的host、method、url、status、extension等等
 
-------
+tututututut
 
-```
-#### Fourth-level heading
-```
+当我们选中某个请求时，可以看他的请求包信息，同样也可查看他的响应包信息
 
-**Result:**
+tututututut
 
-#### Fourth-level heading
+请求数据包
 
-## Headings with ID Tags {#someIdTag}
+tutututututut
 
-If you want to use a specific ID tag with your heading, add it like this:
+同样，可以双机某个数据包即可打开详情,通过`Previous/next`功能切换到其他数据包，同时，也可将该数据包发送到其他功能模块当中，方便我们的使用
 
-```
-## Headings with ID Tags {#someIdTag}
-```
+tutututututut
 
-Then you can reference it with a link like this on the same page:
+如果认为某个数据包比较重要，可将当前数据包设置某个醒目的颜色以提示他的重要性
 
-```
-[Some link](#someIdTag)
-```
+tututututut
 
-**Result:**
+该模块下存在`filter`功能，有许多模块存在该功能，可使用该功能将认为无用的数据包隐藏，把需要的数据包显示到当前状态下。
 
-[Some link](#someIdTag)
+点击filter功能会出现该功能的配置选项。
 
-For details about linking to headings on different pages, see [Automated links to headings on pages][mydoc_hyperlinks.html#bookmarklinks].
+tutututututututututut
 
-## Specify a particular page layout
+可以按照请求类型，请求的状态，mime类型、搜索关键字，文件后缀、监听的端口等等，按个人需求去缩小需要的范围
 
-The configuration file sets the default layout for pages as the "page" layout.
+tututututututututut
+ 
+#### options模块
 
-You can create other layouts inside the layouts folder. If you create a new layout, you can specify that your page use your new layout by adding `layout: mylayout.html` in the page's frontmatter. Whatever layout you specify in the frontmatter of a page will override the layout default set in the configuration file.
+**options** - 该选项主要用于设置代理监听、请求和响应，拦截反应等等。
 
-## Comments
+**Proxy Listeners** - 设置监听
 
-Disqus, a commenting system, is integrated into the theme. In the configuration file, specify the Disqus code for the universal code, and Disqus will appear. If you don't add a Disqus value, the Disqus form isn't included.
+tututututututu
 
-{% include links.html %}
+可以添加回环地址、所有的接口、具体的某个ip的地址
+
+tutututututu
+
+**Intercept Client Requests** - 配置拦截规则，设置拦截数据包的匹配规则。
+规则可以是域名、IP、协议、HTTP方法、URL等等
+
+tutututut
+
+**Intercept Server Responses** - 配置拦截规则，设置拦截的匹配规则，基于服务器端的返回情况进行匹配
+
+tututututtu
+ 
+还有很多功能介绍proxy，我们会在以后的文章中结合具体的实例去讲解，这里只进行常用的某些功能进行介绍。
+
+### 实战篇
+
+#### burp代理设置
+
+首先我们需要设置burp代理，这里我们将端口设置为8888
+
+tutututututut
+ 
+同时需要选中该复选框
+
+tutututututut
+ 
+#### 浏览器代理设置
+
+##### 方法一
+
+这里以chrome为例，选择“设置”
+
+tututututut
+
+找到“代理设置”
+ 
+tututututututt
+
+选择“连接”中的“局域网”
+
+tututututut
+ 
+设置代理地址和端口，要和burp的地址端口相同
+
+tututututut
+ 
+访问浏览器可抓取到数据包
+
+tututututututut
+ 
+##### 方法二
+
+使用浏览器扩展代理工具，避免每次到设置中查找该工具。
+
+tututututut
+ 
+选择设置的代理
+
+tututututu
+ 
+#### 抓取数据包
+
+tututututututut 
+
+同样，可以在history中查看某些数据，当访问的数据包较多时，但我们只需要某些特征时，可进行筛选
+
+tutututututututut
+
+#### 筛选数据包
+
+看到既有php,也有js的数据，我们可能只想看php的，可以在filter中选择隐藏某些后缀
+
+tututututut
+ 
+同样，可以设置只显示php、asp、jsp等后缀
+ 
+tututututut
+
+也可以选择某些特定状态的数据包，例如：status为200等等
+ 
+tututututututtu
+
