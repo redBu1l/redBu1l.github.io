@@ -53,7 +53,7 @@ Burp Suite是Java编写的，所以在使用前需要安装Jdk环境，这里不
 
 **Intercept** - 控制抓取到的数据包，并可将数据包放行或舍弃，以及发送到其他功能中。
 
-tutututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/1.png)
 
 **Intercept**相关功能
 
@@ -63,73 +63,77 @@ tutututututut
 
 * **Interceptionis on/off** - 是否拦截数据包，on表示拦截，off表示放行
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/2.png)
 
 * **Action** - 可对该数据包做哪些操作，同样数据包处右击和action效果相同
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/3.png)
 
 * **Commentfield** - 为请求包或响应包设置注释，并可选择相应的颜色，更容易在history中查找到
 
-tutututu
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/4.png)
 
 * **？** - 查看帮助信息。可通过帮助信息查看功能的使用
 
-tutututututu
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/5.png)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/6.png)
  
 同样，burp有四种消息类型显示数据包
 
 **Raw** - 以纯文本形式显示数据包
 
-tutututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/7.png)
+
 
 **Params** - 包含参数URL 查询字符串、cookies的请求，并可双机该请求进行修改 
 
-tututututu
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/8.png)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/9.png)
 
 **Headers** - 以名称、值的形式显示获取的数据包。
 
-tutututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/10.png)
 
 **Hex** - 可编辑数据包的二进制数据，在进行00截断时非常好用。
 
-tutututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/11.png)
 
 同样，burp具有搜索功能，可以搜索当前数据包中你想要的内容，并且会显示符合内容的个数以及位置
 
-tututututut
+
 
 #### histroy模块
 
 **Histroy** - 记录设置代理后浏览器访问的页面数据包，详细记录数据包的host、method、url、status、extension等等
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/12.png)
 
 当我们选中某个请求时，可以看他的请求包信息，同样也可查看他的响应包信息
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/13.png)
 
 请求数据包
 
-tutututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/14.png)
 
 同样，可以双机某个数据包即可打开详情,通过`Previous/next`功能切换到其他数据包，同时，也可将该数据包发送到其他功能模块当中，方便我们的使用
 
-tutututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/15.png)
+
 
 如果认为某个数据包比较重要，可将当前数据包设置某个醒目的颜色以提示他的重要性
 
-tututututut
 
 该模块下存在`filter`功能，有许多模块存在该功能，可使用该功能将认为无用的数据包隐藏，把需要的数据包显示到当前状态下。
 
 点击filter功能会出现该功能的配置选项。
 
-tutututututututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/16.png)
 
 可以按照请求类型，请求的状态，mime类型、搜索关键字，文件后缀、监听的端口等等，按个人需求去缩小需要的范围
 
-tututututututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/17.png)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/18.png)
  
 #### options模块
 
@@ -137,20 +141,21 @@ tututututututututut
 
 **Proxy Listeners** - 设置监听
 
-tututututututu
+
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/19.png)
 
 可以添加回环地址、所有的接口、具体的某个ip的地址
 
-tutututututu
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/20.png)
 
 **Intercept Client Requests** - 配置拦截规则，设置拦截数据包的匹配规则。
 规则可以是域名、IP、协议、HTTP方法、URL等等
 
-tutututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/21.png)
 
 **Intercept Server Responses** - 配置拦截规则，设置拦截的匹配规则，基于服务器端的返回情况进行匹配
 
-tututututtu
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/22.png)
  
 还有很多功能介绍proxy，我们会在以后的文章中结合具体的实例去讲解，这里只进行常用的某些功能进行介绍。
 
@@ -160,11 +165,11 @@ tututututtu
 
 首先我们需要设置burp代理，这里我们将端口设置为8888
 
-tutututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/23.png)
  
 同时需要选中该复选框
 
-tutututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/24.png)
  
 #### 浏览器代理设置
 
@@ -172,53 +177,55 @@ tutututututut
 
 这里以chrome为例，选择“设置”
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/25.png)
 
 找到“代理设置”
  
-tututututututt
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/26.png)
 
 选择“连接”中的“局域网”
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/27.png)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/27.png)
  
 设置代理地址和端口，要和burp的地址端口相同
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/28.png)
  
 访问浏览器可抓取到数据包
 
-tututututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/29.png)
  
 ##### 方法二
 
 使用浏览器扩展代理工具，避免每次到设置中查找该工具。
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/30.png)
  
 选择设置的代理
 
-tututututu
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/31.png)
  
 #### 抓取数据包
 
-tututututututut 
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/32.png)
 
 同样，可以在history中查看某些数据，当访问的数据包较多时，但我们只需要某些特征时，可进行筛选
 
-tutututututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/33.png)
 
 #### 筛选数据包
 
 看到既有php,也有js的数据，我们可能只想看php的，可以在filter中选择隐藏某些后缀
 
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/34.png)
  
 同样，可以设置只显示php、asp、jsp等后缀
  
-tututututut
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/35.png)
 
 也可以选择某些特定状态的数据包，例如：status为200等等
  
-tututututututtu
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/36.png)
+![](https://raw.githubusercontent.com/redBu1l/Redclub-Launch/master/%E6%94%BB%E9%98%B2%E7%AC%AC%E5%85%AD%E8%8A%82/burpsuite/37.png)
 
