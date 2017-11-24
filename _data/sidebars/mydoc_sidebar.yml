@@ -51,12 +51,15 @@ entries:
           
 
         
-    - title: 渗透测试前言
+    - title: Web安全前言
       url: /mydoc_release_notes_50.html
       output: web
-    - title: 渗透XSS系列漏洞
+    - title: Web安全XSS漏洞
       url: /mydoc_release_notes_60.html
       output: web
+    - title: Web安全Csrf漏洞
+      url: /mydoc_posts.html
+      output: web, pdf
          
 
 
