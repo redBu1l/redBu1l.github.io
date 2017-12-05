@@ -60,7 +60,7 @@ entries:
     - title: Web安全 -- Csrf漏洞
       url: /mydoc_posts.html
       output: web, pdf
-    - title:Web安全 -- Burpsuite实战（上）
+    - title:Web安全 -- Burpsuite实战（下）
       url: /mydoc_lists.html
       output: web, pdf
          
