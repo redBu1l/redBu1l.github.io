@@ -1,5 +1,5 @@
 ---
-title: Web安全 -- BurpSuite实战（下）
+title: Web安全BurpSuite实战（下）
 keywords: bulleted lists, numbered lists
 tags: [formatting]
 summary: "安全工具使用"

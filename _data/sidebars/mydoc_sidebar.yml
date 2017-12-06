@@ -38,30 +38,30 @@ entries:
 
 
 
-    - title: Web安全 -- 信息收集（上）
+    - title: Web安全信息收集（上）
       url: /mydoc_introduction.html
       output: web
 
-    - title: Web安全 -- 信息收集（下）
+    - title: Web安全信息收集（下）
       url: /tag_navigation.html
       output: web
-    - title: Web安全 -- Burpsuite实战（上）
+    - title: Web安全Burpsuite实战（上）
       url: /mydoc_pages.html
       output: web, pdf
           
 
         
-    - title: Web安全 -- 前言
+    - title: Web安全前言
       url: /mydoc_release_notes_50.html
       output: web
-    - title: Web安全 -- XSS漏洞
+    - title: Web安全XSS漏洞
       url: /mydoc_release_notes_60.html
       output: web
-    - title: Web安全 -- Csrf漏洞
+    - title: Web安全Csrf漏洞
       url: /mydoc_posts.html
       output: web, pdf
       
-    - title:Web安全 -- Burpsuite实战（下）
+    - title:Web安全Burpsuite实战（下）
       url: /mydoc_lists.html
       output: web
          
