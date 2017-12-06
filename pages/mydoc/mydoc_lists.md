@@ -12,11 +12,12 @@ permalink: mydoc_lists.html
 
 ### intruder功能
 
-标识符枚举用户名，ID和账户号码， 模糊测试SQL注入，跨站，目录遍历等等
+标识符枚举用户名，ID和账户号码， 模糊测试SQL注入，跨站，目录遍历等等。
 
 首先，打开burp，并进入到proxy功能，可以看到“**target**”、“**positions**”、“**payloads**”、“**options**”标签
 
 #### positions模块
+
 
 * **Positions** - 选择攻击模式
 
