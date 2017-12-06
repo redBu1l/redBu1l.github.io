@@ -63,6 +63,12 @@ entries:
     - title:Web安全Burpsuite实战（下）
       url: /mydoc_lists.html
       output: web
+    - title:Web安全
+      url: /mydoc_lists.html
+      output: web
+    - title:Web安全
+      url: /mydoc_lists.html
+      output: web
          
 
 
