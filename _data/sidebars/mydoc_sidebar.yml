@@ -48,6 +48,9 @@ entries:
     - title: Web安全Burpsuite实战（上）
       url: /mydoc_pages.html
       output: web, pdf
+    - title:Web安全Burpsuite实战（下）
+      url: /mydoc_lists.html
+      output: web
           
 
         
@@ -60,15 +63,7 @@ entries:
     - title: Web安全Csrf漏洞
       url: /mydoc_posts.html
       output: web, pdf
-    - title:Web安全Burpsuite实战（下）
-      url: /mydoc_lists.html
-      output: web
-    - title:Web安全
-      url: /mydoc_lists.html
-      output: web
-    - title:Web安全
-      url: /mydoc_lists.html
-      output: web
+
          
 
 
