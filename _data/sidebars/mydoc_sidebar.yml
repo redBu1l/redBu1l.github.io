@@ -31,17 +31,12 @@ entries:
   - title: 基础篇
     output: web
     folderitems:
-
     - title: 安全课程思维图
       url: /mydoc_tag_archives_overview.html
       output: web
-
-
-
     - title: Web安全信息收集（上）
       url: /mydoc_introduction.html
       output: web
-
     - title: Web安全信息收集（下）
       url: /tag_navigation.html
       output: web
@@ -51,9 +46,6 @@ entries:
     - title:Web安全Burpsuite实战（下）
       url: /mydoc_lists.html
       output: web
-          
-
-        
     - title: Web安全前言
       url: /mydoc_release_notes_50.html
       output: web
@@ -62,7 +54,7 @@ entries:
       output: web
     - title: Web安全Csrf漏洞
       url: /mydoc_posts.html
-      output: web, pdf
+      output: web
 
          
 
